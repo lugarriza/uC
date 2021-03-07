@@ -1,0 +1,42 @@
+{
+    "env": {
+        "myDefaultIncludePath": [
+            "${workspaceFolder}/USB_HOST/App",
+            "${workspaceFolder}/USB_HOST/Target",
+            "${workspaceFolder}/Core/Inc",
+            "${workspaceFolder}/Drivers/STM32F4xx_HAL_Driver/Inc",                
+            "${workspaceFolder}/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy",
+            "${workspaceFolder}/Middlewares/ST/STM32_USB_Host_Library/Core/Inc",
+            "${workspaceFolder}/Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc",
+            "${workspaceFolder}/Drivers/CMSIS/Device/ST/STM32F4xx/Include",
+            "${workspaceFolder}/Drivers/CMSIS/Include"            
+        ],
+        "myCompilerPath": "/usr/local/bin/gcc-7"
+      },
+    "configurations": [
+        {
+            "name": "STM32F4",
+            "includePath": [
+                //"${myDefaultIncludePath}"
+                "${workspaceFolder}/**"              
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE",
+                "USE_HAL_DRIVER",
+                "STM32F407xx"
+            ],
+            "windowsSdkVersion": "10.0.18362.0",
+            "compilerPath": "/usr/bin/arm-none-eabi-gcc",
+            "compilerArgs": [
+                "-mcpu=cortex-m4",
+                "-mthumb"
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-arm"
+        }
+    ],
+    "version": 4
+}
