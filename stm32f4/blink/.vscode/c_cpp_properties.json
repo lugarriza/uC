@@ -15,7 +15,7 @@
       },
     "configurations": [
         {
-            "name": "STM32F4",
+            "name": "STM32F4 Disco",
             "includePath": [
                 //"${myDefaultIncludePath}"
                 "${workspaceFolder}/**"              
@@ -28,7 +28,7 @@
                 "STM32F407xx"
             ],
             "windowsSdkVersion": "10.0.18362.0",
-            "compilerPath": "/usr/bin/arm-none-eabi-gcc",
+            "compilerPath": "${env:ARMGCC_DIR}/arm-none-eabi-gcc.exe",
             "compilerArgs": [
                 "-mcpu=cortex-m4",
                 "-mthumb"

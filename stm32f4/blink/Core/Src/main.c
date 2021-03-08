@@ -113,7 +113,7 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
     HAL_GPIO_TogglePin(LD4_GPIO_Port,LD4_Pin);
-    HAL_Delay(1000);
+    HAL_Delay(200);
   }
   /* USER CODE END 3 */
 }

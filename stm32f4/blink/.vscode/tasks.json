@@ -3,7 +3,7 @@
         {
             "type": "cppbuild",
             "label": "C/C++: arm-none-eabi-gcc build active file",
-            "command": "/usr/bin/arm-none-eabi-gcc",
+            "command": "arm-none-eabi-gcc",
             "args": [
                 "-mcpu=cortex-m4",
                 "-mthumb",
